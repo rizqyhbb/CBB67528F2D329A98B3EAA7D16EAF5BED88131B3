@@ -1,0 +1,13 @@
+@use '../base';
+
+.radio {
+  
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: $grey-dark;
+  }

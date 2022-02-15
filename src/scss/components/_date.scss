@@ -10,7 +10,11 @@
     background-color: transparent;
   }
 
-  &__button:active {
+  &__button:disabled {
+    color: $grey-light;
+  }
+
+  &__button:focus {
     background-color: $grey-dark;
     color: white;
   }

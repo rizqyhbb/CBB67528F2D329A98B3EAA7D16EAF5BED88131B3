@@ -1,13 +1,14 @@
 .card {
   border-radius: 8px;
   overflow: hidden;
+  margin: 16px 0;
 
   &__title {
-    font-weight: bold;
+    font-weight: bold !important;
   }
 
   &__price {
-    font-weight: bold;
+    font-weight: bold !important;
   }
 
   &__figure {
@@ -18,7 +19,6 @@
   }
 
   &__figure-img {
-    max-width: 100%;
     min-height: 100%;
     min-width: 100%;
     object-fit: cover;
