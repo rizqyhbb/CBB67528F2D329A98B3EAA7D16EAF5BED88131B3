@@ -1,0 +1,12 @@
+@use '../base';
+
+.date{
+
+  &__button {
+    border: none;
+  }
+
+  &__button:active {
+    background-color: $grey-dark;
+  }
+}

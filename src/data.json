@@ -16,5 +16,65 @@
         "price": "Rp 40.000",
         "src": "https://assets.kulina.id/kulina-assets/web/images/menus-new-user/menu_40_03.jpg"
       }
-    ]
+    ],
+  "date":
+  [
+    {
+      "id": 1,
+      "hari": "SEN",
+      "tanggal": 1
+    },{
+      "id": 2,
+      "hari": "SEL",
+      "tanggal": 2
+    },{
+      "id": 3,
+      "hari": "RAB",
+      "tanggal": 3
+    },{
+      "id": 4,
+      "hari": "KAM",
+      "tanggal": 4
+    },{
+      "id": 5,
+      "hari": "JUM",
+      "tanggal": 5
+    },{
+      "id": 6,
+      "hari": "SAB",
+      "tanggal": 6
+    },{
+      "id": 7,
+      "hari": "MING",
+      "tanggal": 7
+    },{
+      "id": 8,
+      "hari": "SEN",
+      "tanggal": 8
+    },{
+      "id": 9,
+      "hari": "SEL",
+      "tanggal": 9
+    },{
+      "id": 10,
+      "hari": "RAB",
+      "tanggal": 10
+    },{
+      "id": 11,
+      "hari": "KAM",
+      "tanggal": 11
+    },{
+      "id": 12,
+      "hari": "JUM",
+      "tanggal": 12
+    },{
+      "id": 13,
+      "hari": "SAB",
+      "tanggal": 13
+    },{
+      "id": 14,
+      "hari": "MING",
+      "tanggal": 14
+    }
+  ]
 }

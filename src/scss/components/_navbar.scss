@@ -1,0 +1,29 @@
+@use '../base';
+
+.navbar{
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+  
+  &__action {
+    margin: 0px;
+    margin-right: 16px;
+  }
+
+  &__location-content {
+    font-weight: bold;
+    display: inline;
+    margin: 0px;
+  }
+
+  &__location-arrow {
+    margin: 0 8px;
+    display: inline;
+    color: $red-dark;
+  }
+
+  &__location-title {
+    margin: 0;
+  }
+  
+}
