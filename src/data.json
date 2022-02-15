@@ -1,0 +1,20 @@
+{
+  "food":
+    [
+      {
+        "id": 1,
+        "rating": 4.5,
+        "title": "Seafood Kani mentai Rice",
+        "author": "Kulina - Uptown Lunch",
+        "price": "Rp 35.000",
+        "src": "https://assets.kulina.id/kulina-assets/web/images/menus-new-user/menu_40_02.jpg"
+      },{
+        "id": 2,
+        "rating": 4.5,
+        "title": "Penne-Pasta Chicken Presto",
+        "author": "Kulina - Uptown Lunch",
+        "price": "Rp 40.000",
+        "src": "https://assets.kulina.id/kulina-assets/web/images/menus-new-user/menu_40_03.jpg"
+      }
+    ]
+}

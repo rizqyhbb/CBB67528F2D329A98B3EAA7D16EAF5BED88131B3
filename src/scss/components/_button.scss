@@ -1,0 +1,17 @@
+@use '../base';
+.button {
+  background-color: $red;
+  color: white;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: $red-dark;
+}

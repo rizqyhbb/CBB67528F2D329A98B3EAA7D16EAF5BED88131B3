@@ -1,0 +1,41 @@
+// font
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+$font-open: 'Open Sans', sans-serif;
+
+.text-xs {
+  font: 8px $font-open;
+}
+.text-s {
+  font: 12px $font-open;
+}
+.text-m {
+  font: 14px $font-open;
+}
+.text-l {
+  font: 16px $font-open;
+}
+.text-xl {
+  font: 20px $font-open;
+}
+
+// color
+$red: #f9234a;
+$red-dark: #a23530;
+$grey-lighter: #f1f1f2;
+$grey-light: #e2e4e4;
+$grey: #6e7679;
+$grey-dark: #424749;
+
+// shading
+.shadow {
+  box-shadow: 0px 8px 10px 0px rgba(10, 31, 68, 0.1);
+}
+
+// Notes
+      // <p className='text-xs'>ALAMAT PENGANTAR</p>
+      // <p className='text-l'>Tokopedia Tower</p>
+      // <p className='text-l'>Kamis, 13 Maret 2019</p>
+      // <p className='text-s'>4.5 </p>
+      // <p className='text-m'>Roasted Chicken with Scrambled Egg</p>
+      // <p className='text-s'>By Kulina Uptown lunch</p>
+      // <p className='text-m'>RP 35,000</p>
