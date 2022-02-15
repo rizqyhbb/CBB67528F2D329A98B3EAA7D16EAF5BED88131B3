@@ -1,0 +1,13 @@
+@use '../base';
+
+.home {
+
+  &__date {
+    display: flex;
+    overflow: scroll;
+    border-bottom: 1px solid;
+    border-color: $grey-lighter;
+    margin: 8px 0;
+    padding: 4px 0;
+  }
+}

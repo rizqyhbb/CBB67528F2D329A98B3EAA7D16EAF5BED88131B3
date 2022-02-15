@@ -1,7 +1,6 @@
 @use '../base';
 .button {
   background-color: $red;
-  color: white;
   border: none;
   padding: 8px 24px;
   border-radius: 4px;
@@ -10,6 +9,7 @@
 
 .button:hover {
   cursor: pointer;
+  color: white;
 }
 
 .button:active {

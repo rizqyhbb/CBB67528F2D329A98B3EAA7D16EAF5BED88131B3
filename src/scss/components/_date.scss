@@ -4,9 +4,24 @@
 
   &__button {
     border: none;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: transparent;
   }
 
   &__button:active {
     background-color: $grey-dark;
+    color: white;
   }
+
+  &__button-date {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  &__button-day {
+    margin: 0;
+  }
+
 }
