@@ -1,31 +1,36 @@
 @use '../base';
 
 .date{
-
-  &__button {
-    border: none;
-    height: 48px;
-    width: 48px;
-    border-radius: 50%;
-    background-color: transparent;
+  
+  &__radio {
+    display: none;
+  }
+  
+  &__radio:disabled + &__label-container {
+    color: $grey-light ;
   }
 
-  &__button:disabled {
-    color: $grey-light;
-  }
-
-  &__button:focus {
+  &__radio:checked + &__label-container {
     background-color: $grey-dark;
     color: white;
   }
 
-  &__button-date {
-    margin: 0;
-    font-weight: bold;
+  &__label-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
   }
 
-  &__button-day {
+  &__radio-date {
     margin: 0;
+    font-weight: bold !important;
   }
 
+  &__radio-day {
+    margin: 0;
+  }
 }

@@ -1,0 +1,17 @@
+@use '../base';
+
+.menu {
+  &__button{
+    border: none;
+    background-color: transparent;
+  }
+
+  &__radio {
+    display: none;
+  }
+
+  &__radio:checked + &__label-container {
+    background-color: $grey-dark;
+    color: white;
+  }
+}

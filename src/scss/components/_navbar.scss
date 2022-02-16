@@ -3,11 +3,16 @@
 .navbar{
   display: flex;
   align-items: center;
-  margin: 16px 0;
   
   &__action {
     margin: 0px;
     margin-right: 16px;
+    font-size: 24px;
+  }
+  &__location button {
+    border: none;
+    background-color: transparent;
+    text-align: justify;
   }
 
   &__location-content {
@@ -25,5 +30,6 @@
   &__location-title {
     margin: 0;
   }
+
   
 }

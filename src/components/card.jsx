@@ -12,7 +12,7 @@ const Card = ({src, title, rating, author, price}) => {
       <p className="card__author text-s">{author}</p>
       </div>
       <div className="card__action">
-        <p className="card__price text-m">{price}</p>
+        <p className="card__price text-m">Rp {price}</p>
         <Button>ADD +</Button>
       </div>
     </div>

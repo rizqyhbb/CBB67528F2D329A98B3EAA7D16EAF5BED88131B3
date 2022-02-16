@@ -6,14 +6,14 @@
         "rating": 4.5,
         "title": "Seafood Kani mentai Rice",
         "author": "Kulina - Uptown Lunch",
-        "price": "Rp 35.000",
+        "price": 35000,
         "src": "https://assets.kulina.id/kulina-assets/web/images/menus-new-user/menu_40_02.jpg"
       },{
         "id": 2,
         "rating": 4.5,
         "title": "Penne-Pasta Chicken Presto",
         "author": "Kulina - Uptown Lunch",
-        "price": "Rp 40.000",
+        "price": 40000,
         "src": "https://assets.kulina.id/kulina-assets/web/images/menus-new-user/menu_40_03.jpg"
       }
     ],
@@ -75,6 +75,26 @@
       "id": 14,
       "hari": "MIN",
       "tanggal": 14
+    }
+  ],
+  "address": [
+    {
+      "id":1,
+      "name": "Kulina",
+      "detail": "Jl. Kulina"
+    },
+    {
+      "id":2,
+      "name": "Pancoran Riverside Apartment",
+      "detail": "Jl. Pancoran Riverside Apartment"
+    },{
+      "id":3,
+      "name": "Jalan Tulodong Atas No 28",
+      "detail": "Jl. Jalan Tulodong Atas No 28"
+    },{
+      "id":4,
+      "name": "Block 71 jakarta",
+      "detail": "Jl. Block 71 jakarta"
     }
   ]
 }

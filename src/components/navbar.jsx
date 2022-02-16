@@ -1,11 +1,15 @@
-const Navbar = ({content}) => {
+import { MdArrowBack, MdExpandMore } from 'react-icons/md'
+
+const Navbar = ({content, onClick}) => {
   return (
     <nav className="navbar">
-      <p className="navbar__action">Back</p>
+      <MdArrowBack className="navbar__action" />
       <div className="navbar__location">
-        <p className="navbar__location-title text-xs">ALAMAT PENGANTAR</p>
-        <p className="navbar__location-content text-l">{content}</p>
-        <p className="navbar__location-arrow">Icon</p>
+        <button onClick={onClick}>
+          <p className="navbar__location-title text-xs">ALAMAT PENGANTAR</p>
+          <p className="navbar__location-content text-l">{content}</p>
+          <MdExpandMore className="navbar__location-arrow" />
+        </button>
       </div>
     </nav>
 

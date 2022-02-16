@@ -1,0 +1,42 @@
+@use '../base';
+
+.cart {
+
+  &__button{
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    background-color: $red-dark;
+    padding: 8px 16px;
+  }
+
+  &__button-label {
+    text-align: justify;
+  }
+
+  &__button-icon {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  &__button-icon-shoppingcart {
+    font-size: 24px;
+  }
+
+  &__button-icon-arrow {
+    font-size: 12px;
+  }
+
+  &__button-description {
+    font-weight: bold !important;
+  }
+
+  &__button-label p {
+    color: white;
+    margin: 0;
+  }
+}

@@ -1,0 +1,22 @@
+.modal {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 16px 16px;
+  
+  &__title {
+    font-weight: bold !important;
+  }
+
+  &__close-icon {
+    font-size: 28px;
+  }
+
+  &__icon-container {
+    text-align: end;
+  }
+
+  &__icon-btn {
+    border: none;
+    background-color: transparent;
+  }
+}
