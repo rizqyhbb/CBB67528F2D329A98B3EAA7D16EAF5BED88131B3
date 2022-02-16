@@ -1,19 +1,16 @@
-import {MdClose, MdLocationOn} from 'react-icons/md'
-const Modal = ({title, onChange, value, name, address}) => {
+import {MdLocationOn} from 'react-icons/md'
+const List = ({ name, address, onClick}) => {
   return (
-    <div className="modal">
-      <MdClose className='modal__close-icon'/>
-      <p className='modal__title text-l'>{title}</p>
-      <input className='modal__input' type="text" onChange={onChange} value={value}/>
-      <MdLocationOn className='modal__search-location-icon'/>
-      <div className='modal__location'>
-      <MdLocationOn className='modal__location-icon'/>
-      <p className='modal__location-name text-m'>{name}</p>
-      <p className='modal__location-address text-s'>{address}</p>
-      </div>
-      <p className='footer'>Powered By Google</p>
-    </div>
+      <button className='list' onClick={onClick}>
+        <div className='list__location-icon-container'>
+          <MdLocationOn className='list__location-icon'/>
+        </div>
+        <div className='list__location-name-container'>
+          <p className='list__location-name text-l'>{name}</p>
+          <p className='list__location-detail text-m'>{address}</p>
+        </div>
+      </button>
   )
 }
 
-export default Modal;
+export default List;

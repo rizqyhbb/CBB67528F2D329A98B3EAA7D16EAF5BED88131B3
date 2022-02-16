@@ -1,22 +1,43 @@
-import { Card, Navbar, Date, Menu, Cart, Modal, Search } from "../../components";
+import { Card, Navbar, Date, Menu, Cart, Modal, Search, List, ButtonGroup } from "../../components";
 import api from '../../data.json'
 import { useState } from "react";
 
 const HomePage = () => {
   const [data] = useState(api.food)
   const [dates] = useState(api.date)
-  const [address] = useState(api.address);
+  const [addresses] = useState(api.address);
   const [show, setShow] = useState(false);
   const [location, setlocation] = useState('Tokopedia Tower')
   const [item, setItem] = useState(0)
-  const [totalPrice, setTotalprice] = useState(0)
+  const [totalPrice, setTotalPrice] = useState(0)
   const [datePick, setDatePick] = useState({})
+  const [searchTerm, setSearchTerm] = useState("")
+  const [isLunch, setIsLunch] = useState(true)
+  const [isDinner, setIsDinner] = useState(false)
+  const [selected, setSelected] = useState("Dinner")
+
+  const openModal = () => {
+    setShow(true);
+    const body = document.querySelector("body")
+    body.style.overflowY = "hidden"
+  }
+
+  const closeModal = () => {
+    setShow(false)
+    const body = document.querySelector("body")
+    body.style.overflowY = "auto"
+  }
+
+  const addToCart = (price) => {
+      setItem(item + 1)
+      setTotalPrice(totalPrice + price)
+  }
 
   return (
     <div className="home">
       <div className="home__header">
         <div className="home__navbar">
-          <Navbar content={location} onClick={() => setShow(true)}/>
+          <Navbar content={location} onClick={openModal}/>
         </div>
         <div className="home__date">
           {dates.map((date) => (
@@ -28,12 +49,13 @@ const HomePage = () => {
       </div>
       <div className="home__content">
         <div className="home__menu">
-          <div className="home__menu-lunch">
-            <Menu id="lunch" name="menu" value="lunch" label="Lunch" checked={true} onChange={() => ""}/>
+          <ButtonGroup label1="Lunch" label2="Dinner" selected={selected} onClick={() => setSelected(selected === "Lunch" ? "Dinner" : "Lunch")}/>
+          {/* <div className="home__menu-lunch">
+            <Menu id="lunch" name="menu" value="lunch" label="Lunch" checked={isLunch} onChange={(e) => setIsLunch(e.target.checked)}/>
           </div>
           <div className="home__menu-dinner">
-            <Menu id="dinner" name="menu" value="dinner" label="Dinner" onChange={() => ""}/>
-          </div>
+            <Menu id="dinner" name="menu" value="dinner" label="Dinner" checked={isDinner} onChange={(e) => setIsDinner(e.target.checked)}/>
+          </div> */}
         </div>
         <div className="home__card">
         {data.map((food) => (
@@ -44,6 +66,7 @@ const HomePage = () => {
               rating={food.rating}
               author={food.author}
               price={food.price}
+              onClick={() => addToCart(food.price)}
             />
           </ div>
         ))}
@@ -53,14 +76,31 @@ const HomePage = () => {
           <Cart item={item} totalPrice={totalPrice}/>
       </div>
       {show && 
-        <div className="home__modal">
-        <Modal title="Cek makanan yang tersedia di lokasi kamu" onClick={() => setShow(false)}>
-          <div>
-            <Search />
-            {/* <h1>Hello World</h1> */}
-          </div>  
-        </ Modal>
-      </div>
+        <>
+          <div className="home__modal"></ div>
+          <Modal title="Cek makanan yang tersedia di lokasi kamu" onClick={closeModal}>
+            <div className="modal__content">
+              <Search placeholder="Search.." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
+              <div className="modal__content-list-container">
+                {searchTerm.length > 3 ? addresses.filter((address) => {
+                  if(searchTerm === "") {
+                    return address
+                  } else if
+                    (address.name.toLowerCase().includes(searchTerm.toLowerCase())){
+                      return address
+                  }
+                }).map((address) => (
+                  <div className="modal__content-list" key={address.id}>
+                    <List name={address.name} address={address.detail} onClick={() => setlocation(address.name)}/>
+                  </div>
+                )) : addresses.map((address) => (
+                  <div className="modal__content-list" key={address.id}>
+                    <List name={address.name} address={address.detail} onClick={() => setlocation(address.name)}/>
+                  </div>))}
+              </div>
+            </div>  
+          </ Modal>
+        </>
       }
       
     </div>

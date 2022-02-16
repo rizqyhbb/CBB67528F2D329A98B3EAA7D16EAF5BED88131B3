@@ -2,6 +2,12 @@
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   padding: 16px 16px;
+  position: fixed;
+  bottom: 0;
+  height: calc(100vh - 152px);
+  left: 0;
+  background-color: white;
+  z-index: 2;
   
   &__title {
     font-weight: bold !important;
@@ -18,5 +24,14 @@
   &__icon-btn {
     border: none;
     background-color: transparent;
+  }
+
+  &__content {
+    height: calc(100% - 143px);
+  }
+
+  &__content-list-container {
+    height: calc(100% - 32px);
+    overflow-y: auto;
   }
 }

@@ -11,6 +11,17 @@
     font-weight: bold !important;
   }
 
+  &__rating-container {
+    display: flex;
+  }
+
+  &__rating-icon {
+    margin: 0 4px !important;
+    color: $red;
+    display: flex;
+    align-items: center;
+  }
+
   &__figure {
     margin: 0;
     display: flex;

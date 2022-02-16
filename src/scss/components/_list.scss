@@ -1,0 +1,33 @@
+@use '../base';
+.list {
+    background-color: transparent;
+    border: none;
+    
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+
+  &__location-name-container {
+    text-align: justify;
+    padding: 8px;
+    border-bottom: 1px solid $grey-light;
+    width: 100%;
+  }
+
+  &__location-name {
+    font-weight: bold !important;
+    margin: 0;
+  }
+
+  &__location-detail {
+    color: $grey !important;
+    margin: 0;
+  }
+
+  &__location-icon {
+    font-size: 20px;
+    color: $grey;
+    background-color: $grey-lighter;
+    border-radius: 50%;
+  }
+}

@@ -10,7 +10,7 @@
         "src": "https://assets.kulina.id/kulina-assets/web/images/menus-new-user/menu_40_02.jpg"
       },{
         "id": 2,
-        "rating": 4.5,
+        "rating": 4,
         "title": "Penne-Pasta Chicken Presto",
         "author": "Kulina - Uptown Lunch",
         "price": 40000,
@@ -95,6 +95,42 @@
       "id":4,
       "name": "Block 71 jakarta",
       "detail": "Jl. Block 71 jakarta"
+    },{
+      "id":5,
+      "name": "Jakarta Satu",
+      "detail": "Jl. Jakarta Satu"
+    },{
+      "id":6,
+      "name": "Pemalang Raya",
+      "detail": "Jl. Pemalang Raya"
+    },{
+      "id":7,
+      "name": "Raya Rinjani",
+      "detail": "Jl. Raya Rinjani"
+    },{
+      "id":8,
+      "name": "Jakarta Satu",
+      "detail": "Jl. Jakarta Satu"
+    },{
+      "id":9,
+      "name": "Pemalang Raya",
+      "detail": "Jl. Pemalang Raya"
+    },{
+      "id":10,
+      "name": "Raya Rinjani",
+      "detail": "Jl. Raya Rinjani"
+    },{
+      "id":11,
+      "name": "Jakarta Satu",
+      "detail": "Jl. Jakarta Satu"
+    },{
+      "id":12,
+      "name": "Pemalang Raya",
+      "detail": "Jl. Pemalang Raya"
+    },{
+      "id":13,
+      "name": "Raya Rinjani",
+      "detail": "Jl. Raya Rinjani"
     }
   ]
 }
