@@ -1,4 +1,4 @@
-import { Card, Navbar, Date, Menu, Cart, Modal } from "../../components";
+import { Card, Navbar, Date, Menu, Cart, Modal, Search } from "../../components";
 import api from '../../data.json'
 import { useState } from "react";
 
@@ -28,8 +28,12 @@ const HomePage = () => {
       </div>
       <div className="home__content">
         <div className="home__menu">
+          <div className="home__menu-lunch">
             <Menu id="lunch" name="menu" value="lunch" label="Lunch" checked={true} onChange={() => ""}/>
+          </div>
+          <div className="home__menu-dinner">
             <Menu id="dinner" name="menu" value="dinner" label="Dinner" onChange={() => ""}/>
+          </div>
         </div>
         <div className="home__card">
         {data.map((food) => (
@@ -52,7 +56,8 @@ const HomePage = () => {
         <div className="home__modal">
         <Modal title="Cek makanan yang tersedia di lokasi kamu" onClick={() => setShow(false)}>
           <div>
-            <h1>Hello World</h1>
+            <Search />
+            {/* <h1>Hello World</h1> */}
           </div>  
         </ Modal>
       </div>

@@ -7,7 +7,7 @@ const Modal = ({title, children, onClick}) => {
          <MdClose className='modal__close-icon'/>
         </button>
       </div>
-      <p className='modal__title text-l'>{title}</p>
+      <p className='modal__title text-xl'>{title}</p>
       {children}
     </div>
   )

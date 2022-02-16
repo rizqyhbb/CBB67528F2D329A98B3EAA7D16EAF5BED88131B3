@@ -14,4 +14,12 @@
     background-color: $grey-dark;
     color: white;
   }
+
+  &__label-container {
+    padding: 4px 0;
+  }
+
+  &__label {
+    font-weight: bold !important;
+  }
 }
